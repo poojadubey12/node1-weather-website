@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style> body{
+        background-image: url("img/background.jpeg");
+        background-position: 100%; 
+    }
+    </style>
+    <title>Weather Forecast</title>
+    <link rel="icon" href="/img/applogo.png">
+<link rel="Stylesheet" href="/css/styles.css">
+
+
+</head>
+<body>
+    
+<div class="main-content">
+ {{>header}}
+ 
+<p><b>Use this site to get weather information for your location<b></p>
+<form>
+    <input placeholder="Location">
+    <button>Search</button>
+</form>
+<p id="message-1"></p>
+<p id="message-2"></p>
+</div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
